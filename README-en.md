@@ -86,9 +86,11 @@ mvn spring-boot:run
 ## 📸 Screenshot of the Running Project
 
 ![img](src/main/resources/assets/starting-project.png)
+----
+![img](src/main/resources/assets/successful-conversion.png)
 
 ## Project badge
-<img alingn="center" src="src/main/resources/assets/Badge-Conversor.png" alt="badge ONE" width="200">
+<img src="src/main/resources/assets/Badge-Conversor.png" alt="badge ONE" width="200">
 
 ## 📜 *License*
 

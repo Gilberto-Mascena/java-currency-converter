@@ -11,69 +11,87 @@
 ![Data de Lançamento](https://img.shields.io/github/release-date/Gilberto-Mascena/java-currency-converter?style=for-the-badge)
 ![Tamanho do Repositório](https://img.shields.io/github/repo-size/Gilberto-Mascena/java-currency-converter?style=for-the-badge)
 
-# *Challenger ONE Java back-end training*
+# Challenger ONE - Java Back-end Training
 
-## *🚀 About the project*
+## 🚀 About the Project
 
-### Challenge proposed by ONE Java back-end developer training.
+### This project is part of the ONE Java Back-end Developer Training challenge.
 
-Create a currency converter that converts from one currency to another, using the
-[ExchangeRate-API](https://www.exchangerate-api.com/) API
-Project developed in Java, using the Spring Boot framework, on the command line
+#### The goal is to develop a currency converter that allows conversions between different currencies using the ExchangeRate-API service. The application is built in Java 21, using the Spring Boot framework, and runs on the command line.
 
-#### At least 6 options are required for currency conversion
+##### 🔹 Features
 
-*In this project, 6 currency conversion options were implemented, namely*:
+- Converts between different currencies in real time.
+- Uses the ExchangeRate-API for fetching live exchange rates.
+- Command-line interface for ease of use.
+- Implements at least six currency conversion options.
 
-* _*BRL(Real) => USD(Dollar)*_
-* _*USD(Dollar) => BRL(Real)*_
-* _*EUR(Euro) => BRL(Real)*_
-* _*BRL(Real) => EUR(Euro)*_
-* _*EUR(Euro) => USD(Dollar)*_
-* _*USD(Dollar) => EUR(Euro)*_
+##### 🔹 Available Conversion Options
 
-## *Technologies used*
+#### The application supports the following currency conversions:
+
+✅ BRL (Real) ➝ USD (Dollar)\
+✅ USD (Dollar) ➝ BRL (Real)\
+✅ EUR (Euro) ➝ BRL (Real)\
+✅ BRL (Real) ➝ EUR (Euro)\
+✅ EUR (Euro) ➝ USD (Dollar)\
+✅ USD (Dollar) ➝ EUR (Euro)
+
+## 🛠️ Technologies Used
+
+
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Maven](https://maven.apache.org/)
 - [Git](https://git-scm.com/)
 
-## Requirements
+## 📌 Requirements
+
+#### Before running the project, make sure you have installed:
 
 - [Java 21 or higher](https://www.oracle.com/br/java/technologies/downloads/)
 - [Maven](https://maven.apache.org/)
 - [Git](https://git-scm.com/)
 - Account on the API [ExchangeRate-API](https://www.exchangerate-api.com/), and generate a key to consume the API
 
-## How to run the project:
+## 🚀 How to Run the Project
 
-- Clone the project:
-- *Logged into github*
+1️⃣ Clone the Repository
 
+If you are logged into GitHub:
 ```
-git clone git@github.com:Gilberto-Mascena/conversor-de-moedas-java.git
+git clone git@github.com:Gilberto-Mascena/java-currency-converter.git
 ```
-- *Without being logged into github*.
+If you are not logged into GitHub:
 ```
-git clone https://github.com/Gilberto-Mascena/conversor-de-moedas-java.git
+git clone https://github.com/Gilberto-Mascena/java-currency-converter.git
 ```
+2️⃣ Open the Project in an IDE
 
-- Open the project in an IDE of your choice.
-- In the root of the project, create a file called .env and add: API_KEY_EXCHANGE_RATE_API="_*your API key here*_", save the file!.
-- Open a terminal or prompt in the project folder and run the command:
+Use an IDE of your choice, such as IntelliJ IDEA, Eclipse, or VS Code.
+
+3️⃣ Set Up the API Key
+
+In the root folder of the project, create a .env file and add the following content: ``API_KEY_EXCHANGE_RATE_API="your_api_key_here"``
+
+Save the file!
+
+4️⃣ Run the Application
+
+Open a terminal in the project directory and execute:
 ```
 mvn spring-boot:run
 ```
 
-## *Image of the running project*
+## 📸 Screenshot of the Running Project
 
-![img](./assets/starting-project.png)
+![img](src/main/resources/assets/starting-project.png)
 
-## *Project badge*
-<img alingn="center" src="./assets/Badge-Conversor.png" alt="badge ONE" width="300">
+## Project badge
+<img alingn="center" src="src/main/resources/assets/Badge-Conversor.png" alt="badge ONE" width="200">
 
-## *License*
+## 📜 *License*
 
-*The* [*License MIT*](LICENSE.md) (*MIT*)
+*This project is licensed under the MIT License. See more details at:* [_LICENSE.md_](./LICENSE.md)
 
-### Gilberto | Dev _2024_
+## Gilberto | Dev _2024_

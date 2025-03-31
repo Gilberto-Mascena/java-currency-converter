@@ -14,80 +14,65 @@ public class Instatiation {
 
     public void displayMenu() {
 
-        var option = -1;
-        while (option != 0) {
+        int option;
+        do {
+            System.out.println("""
+                        ************************************************
+                         Welcome to the currency converter!
+                         Choose an option:
+                    
+                         1 - Real ==> Dollar
+                         2 - Dollar ==> Real
+                         3 - Euro ==> Real
+                         4 - Real ==> Euro
+                         5 - Euro ==> Dollar
+                         6 - Dollar ==> Euro
+                    
+                         0 - Exit
+                        ************************************************
+                    """);
 
-            var menu = """
-                    \n
-                    ************************************************
-                     Welcome to the currency converter!
-                     Choose an option:
-                   \s
-                    1 - Real ==> Dollar
-                    2 - Dollar ==> Real
-                    3 - Euro ==> Real
-                    4 - Real ==> Euro
-                    5 - Euro ==> Dollar
-                    6 - Dollar ==> Euro
-                   \s
-                    0 - Exit
-                    ************************************************\s
-                   \s""";
+            option = getUserOption();
+            processOption(option);
+        } while (option != 0);
+    }
 
-            System.out.println(menu);
-            try {
-
-                option = sc.nextInt();
-                sc.nextLine();
-
-                switch (option) {
-                    case 1:
-                        convert(" USD", consumeApi.getData("BRL", "USD"));
-                        break;
-                    case 2:
-                        convert(" BRL", consumeApi.getData("USD", "BRL"));
-                        break;
-                    case 3:
-                        convert(" BRL", consumeApi.getData("EUR", "BRL"));
-                        break;
-                    case 4:
-                        convert(" EUR", consumeApi.getData("BRL", "EUR"));
-                        break;
-                    case 5:
-                        convert(" USD", consumeApi.getData("EUR", "USD"));
-                        break;
-                    case 6:
-                        convert(" EUR", consumeApi.getData("USD", "EUR"));
-                        break;
-                    case 0:
-                        System.out.println("Leaving...");
-                        break;
-                }
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid option! Only numbers are allowed.\n");
-                sc.nextLine();
-            }
+    private int getUserOption() {
+        try {
+            System.out.print("Enter your choice: ");
+            return sc.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid option! Only numbers are allowed.\n");
+            sc.nextLine();
+            return -1;
         }
     }
 
-    double amount;
+    private void processOption(int option) {
+        switch (option) {
+            case 1 -> convert("USD", consumeApi.getData("BRL", "USD"));
+            case 2 -> convert("BRL", consumeApi.getData("USD", "BRL"));
+            case 3 -> convert("BRL", consumeApi.getData("EUR", "BRL"));
+            case 4 -> convert("EUR", consumeApi.getData("BRL", "EUR"));
+            case 5 -> convert("USD", consumeApi.getData("EUR", "USD"));
+            case 6 -> convert("EUR", consumeApi.getData("USD", "EUR"));
+            case 0 -> System.out.println("Exiting...\n");
+            default -> System.out.println("Invalid option! Please choose a valid option.\n");
+        }
+    }
 
-    private void convert(String coin, Double value) {
+    private void convert(String currency, Double exchangeRate) {
+        System.out.print("Enter the amount to be converted: ");
         try {
-            System.out.print("Enter the amount to be converted:");
-            amount = Double.parseDouble(sc.nextLine());
-
-            if (amount > 0) {
-                double result = amount * value;
-                System.out.println();
-                System.out.println("Converted value =>" + String.format("%.2f", result) + coin + "\n");
-            } else if (amount <= 0) {
-                System.out.println();
-                System.out.println("Enter a value greater than or equal to 1!\n");
+            double amount = Double.parseDouble(sc.next());
+            if (amount <= 0) {
+                System.out.println("\nEnter a value greater than 0!\n");
+                return;
             }
+            double result = amount * exchangeRate;
+            System.out.printf("\nConverted value => %.2f %s\n\n", result, currency);
         } catch (NumberFormatException e) {
-            System.out.println();
-            System.out.println("Invalid value! Only numbers are allowed.\n");
+            System.out.println("\nInvalid value! Only numbers are allowed.\n");
         }
     }
 }

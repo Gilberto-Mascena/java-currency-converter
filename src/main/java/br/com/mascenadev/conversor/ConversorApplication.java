@@ -1,6 +1,6 @@
 package br.com.mascenadev.conversor;
 
-import br.com.mascenadev.conversor.entities.Instatiation;
+import br.com.mascenadev.conversor.entities.Instantiation;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +15,7 @@ public class ConversorApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Instatiation instatiation = new Instatiation();
-        instatiation.displayMenu();
+        Instantiation instantiation = new Instantiation();
+        instantiation.displayMenu();
     }
 }

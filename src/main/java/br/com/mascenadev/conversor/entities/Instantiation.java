@@ -6,7 +6,7 @@ import br.com.mascenadev.conversor.service.ConsumeApi;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Instatiation {
+public class Instantiation {
 
 
     private final ConsumeApi consumeApi = new ConsumeApi();

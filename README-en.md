@@ -1,11 +1,15 @@
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Gilberto-Mascena/conversor-de-moedas-java)
-[![license](https://img.shields.io/github/license/Gilberto-Mascena/conversor-de-moedas-java)](https://github.com/Gilberto-Mascena/conversor-de-moedas-java/blob/main/LICENSE.md)
-[![GitHub stars](https://img.shields.io/github/stars/Gilberto-Mascena/conversor-de-moedas-java)](https://github.com/Gilberto-Mascena/conversor-de-moedas-java/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/Gilberto-Mascena/conversor-de-moedas-java)](https://github.com/Gilberto-Mascena/conversor-de-moedas-java/issues)
-![size](https://img.shields.io/github/repo-size/Gilberto-Mascena/conversor-de-moedas-java)
 
 [English](https://github.com/Gilberto-Mascena/conversor-de-moedas-java/blob/main/README-en.md) |
 [Português Brasileiro](https://github.com/Gilberto-Mascena/conversor-de-moedas-java/blob/main/README.md)
+
+![Status de Manutenção](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge)
+[![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/Gilberto-Mascena/java-currency-converter/build.yml?style=for-the-badge)](https://github.com/Gilberto-Mascena/java-currency-converter/actions)
+[![Licença](https://img.shields.io/github/license/Gilberto-Mascena/java-currency-converter?style=for-the-badge)](https://github.com/Gilberto-Mascena/java-currency-converter/blob/main/LICENSE.md)
+[![Estrelas no GitHub](https://img.shields.io/github/stars/Gilberto-Mascena/java-currency-converter?style=for-the-badge)](https://github.com/Gilberto-Mascena/java-currency-converter/stargazers)
+[![Problemas no GitHub](https://img.shields.io/github/issues/Gilberto-Mascena/java-currency-converter?style=for-the-badge)](https://github.com/Gilberto-Mascena/java-currency-converter/issues)
+[![Versão do Repositório](https://img.shields.io/github/v/release/Gilberto-Mascena/java-currency-converter?include_prereleases&style=for-the-badge)](https://github.com/Gilberto-Mascena/java-currency-converter/releases)
+![Data de Lançamento](https://img.shields.io/github/release-date/Gilberto-Mascena/java-currency-converter?style=for-the-badge)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/Gilberto-Mascena/java-currency-converter?style=for-the-badge)
 
 # *Challenger ONE Java back-end training*
 
